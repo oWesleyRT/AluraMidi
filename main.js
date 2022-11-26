@@ -32,3 +32,38 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
         tecla.classList.remove('ativa');
     }
 }
+
+const elementoBody = document.querySelector("body");
+elementoBody.onkeyup = function (evento) {
+    switch (evento.code) {
+        case 'Numpad1':
+            tocaSom('#som_tecla_psh');
+            break;
+        case 'Numpad2':
+            tocaSom('#som_tecla_tic');
+            break;
+        case 'Numpad3':
+            tocaSom('#som_tecla_tom');
+            break;
+        case 'Numpad4':
+            tocaSom('#som_tecla_puff');
+            break;
+        case 'Numpad5':
+            tocaSom('#som_tecla_splash');
+            break;
+        case 'Numpad6':
+            tocaSom('#som_tecla_toim');
+            break;
+        case 'Numpad7':
+            tocaSom('#som_tecla_pom');
+            break;
+        case 'Numpad8':
+            tocaSom('#som_tecla_clap');
+            break;
+        case 'Numpad9':
+            tocaSom('#som_tecla_tim');
+            break;
+        default:
+            break;
+    }
+}
